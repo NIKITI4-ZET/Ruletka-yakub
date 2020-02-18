@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruletka</title>
+    <style type="text/css">
+       @keyframes mymove {
+            0% {transform: rotate(360deg);}
+           100% {transform: rotate(0deg);}
+
+       }
+
+
+
+           </style>
+</head>
+<body>
+<center>
+    <img onclick="click1()" width="450" height="250"  src="1.jpg"><img>
+    <img  src="Ruletka.png" id="indeximg"><img>
+    <audio  id="audio" src="z_uk-ruletki.mp3"></audio>
+    <script type="text/javascript">
+
+
+        function click1() {
+            document.getElementById("audio").play()
+            document.getElementById("indeximg").style.webkitAnimation="mymove 0.5s linear infinite normal"
+            setTimeout(function () {
+                document.getElementById("indeximg").style.webkitAnimation=""
+                document.getElementById("audio").pause()
+            },5000)
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+        </center>
+
+</body>
+</html>
